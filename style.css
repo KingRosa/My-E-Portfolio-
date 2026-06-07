@@ -28,7 +28,6 @@ button {
   cursor: pointer;
 }
 
-
 section {
   background-color: rgb(66, 130, 176);
   background-image: 
@@ -138,7 +137,9 @@ input:focus, textarea:focus {
   color: orangered; 
 }
 
-.link__hover-effect {
+/* FIXED: Target both the class and nav anchor tags explicitly to lock down relative positioning */
+.link__hover-effect,
+.nav__link--anchor {
   position: relative;
 }
 
@@ -663,7 +664,3 @@ footer {
   .project__description--sub-title { margin-bottom: 8px; }
   .modal__half { padding: 40px; }
 }
-
-
-
-
